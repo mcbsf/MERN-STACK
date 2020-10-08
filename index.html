@@ -25,7 +25,7 @@
             </button>
             
             <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="30" width="41"></a>
-
+            
                 <div class="collapse navbar-collapse" id="Navbar">
                      <div class="collapse navbar-collapse" id="Navbar">
 
@@ -44,11 +44,16 @@
         <div class="container">
             <div class="row row-header align-items-center">
                 <div class="col-12 col-sm-6">
+
                     <h1>Ristorante con Fusion</h1>
-                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+                        <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
+                <div class="col-8 col-sm align-self-center">
                     <img src="img/logo.png" class="img-fluid">
+                </div>
+                
+                <div class="col-4">
+                    <button class="btn btn-block reserve-header btn-lg" onclick="downFunction()" id="myBtn" title="Go to top"><b>Reserve</b></button> 
                 </div>
             </div>
         </div>
@@ -61,48 +66,140 @@
                 
             </ol>
             <div class="col-12 col-sm-12 col-md-12">
-               <h3>About Us</h3>
+               <h3>Home Page</h3>
                <hr>
             </div>
 
         </div>
-        <div class="row row-content align-items-center">
+        <div class="row align-items-center">
+            
+            <div class="col col-sm col-md">
+                 <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center"
+                            src="img/uthappizza.png" alt="Uthappizza">
+                    <div class="media-body">
+                        <h2 class="mt-0"><b>Uthappizza</b> <span class="badge badge-danger">HOT</span><span class="badge badge-pill badge-secondary">$4.99</span></h2>
+                        <p class="d-none d-md-block">A unique combination of Indian Uthappam (pancake) and
+                            Italian pizza, topped with Cerignola olives, ripe vine
+                            cherry tomatoes, Vidalia onion, Guntur chillies and
+                            Buffalo Paneer.</p>
+                    </div>
+                </div>
+
+            </div>
             <div class="col-12 col-sm-4 col-md-3">
                 <h3>Our Lipsmacking Culinary Creations</h3>
+
             </div>
-            <div class="col col-sm col-md">
-                <h2>Uthappizza</h2>
-                <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+
+        </div>
+    <hr>
+            
+
+        <div class="row align-items-center">
+            <div class="col-12 col-sm-3 col-md-3 col-lg-3">
+                <h3><b>This Month's Promotions</b></h3>
+            </div>
+            <div class="col-9 col-sm-9 col-md-9 col-lg-9">
+                <div class="media">
+                        <div class="col-9">
+                            <h2 class="mt-0 col-sm-10"><b>Weekend Grand Buffet </b><span class="badge badge-danger">NEW</span></h2>
+                            <p class="d-none d-md-block col-12">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                      
+                        </div>
+                    <div class="media-body">
+                          <img class="d-flex mt-3 img-thumbnail"
+                            src="img/buffet.png" alt="Buffet">
+                    </div>
+                </div>
             </div>
         </div>
-
-
-        <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 col-md-3">
-                <h3>This Month's Promotions</h3>
+        <hr>
+            
+        <div class="row align-items-center">
+            <div class="col-12 col-sm-8 col-md-3">
+                <h3><b>Meet our Culinary Specialists</b></h3>
             </div>
             <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center"
+                            src="img/alberto.png" alt="Alberto Somayya">
+                    <div class="media-body">
+                        <h2 class="mt-0"><b>Alberto Somayya</b></h2>
+                        <h4>Executive Chef</h4>
+                        <p class="d-none d-md-block">Award winning three-star Michelin chef with wide
+                            International experience having worked closely with
+                            whos-who in the culinary world, he specializes in
+                            creating mouthwatering Indo-Italian fusion experiences.
+                            </p>
+                    </div>
+                </div>
             </div>
         </div>
+            <hr>
+        <div id="reserve-form-div" >    
+            <div class="form-group col-6 offset-3 align-items-center"  style="margin-top: 40px">
+                <div class="col-12 rounded border border-light reserve-header reserve-form">
+                  <h2><b>Reserve a Table</b></h2>
+                </div>
+                <div class="border border-light rounded">
+                    <form class="reserve-form">
+                        <div class="">
+                            <label for="firstname" class=" col-form-label col-md-3 col-sm-12">Number of Guests</label>
+                            <div class="col-12">
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                  <label class="form-check-label" for="inlineRadio1">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                  <label class="form-check-label" for="inlineRadio2">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                  <label class="form-check-label" for="inlineRadio3">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                                  <label class="form-check-label" for="inlineRadio4">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
+                                  <label class="form-check-label" for="inlineRadio5">5</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6">
+                                  <label class="form-check-label" for="inlineRadio6">6</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label class="col-3 col-sm-12 col-md-3">Date and Time</label>
+                            <div class="col-12 col-md-8">
+                                <input class="col-3 col-sm-7 col-md-3" type="text" name="" placeholder="Date">
+                                <input class="col-3 col-sm-7 col-md-3"type="text" name="" placeholder="Time">
+                            </div>
+                        </div>
 
-        <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 col-md-3">
-                <h3>Meet our Culinary Specialists</h3>
-            </div>
-            <div class="col col-sm col-md">
-                <h2>Alberto Somayya</h2>
-                <h4>Executive Chef</h4>
-                <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
-            </div>
+                        <div class="form-group row">
+                            <div class=" col-3">
+                                <button type="submit" class="btn btn-primary">Reserve</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                 <div class="col-12 col-md">
+                </div>
+           </div>
+
         </div>
     </div>
-
-    <footer>
+  
+    <footer class="footer">
         <div class="container">
             <div class="row">             
-                <div class="col-4 offset-1 col-sm-2">
+                <div class="col-4 col-sm-2">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
@@ -114,15 +211,15 @@
                 <div class="col-7 col-sm-5">
                     <h5>Our Address</h5>
                     <address>
-		              121, Clear Water Bay Road<br>
-		              Clear Water Bay, Kowloon<br>
-		              HONG KONG<br>
+                      121, Clear Water Bay Road<br>
+                      Clear Water Bay, Kowloon<br>
+                      HONG KONG<br>
                       <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
                       <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
                       <i class="fa fa-envelope fa-lg"></i>: 
                       <a href="mailto:confusion@food.net">confusion@food.net</a>
 confusion@food.net</a>
-		           </address>
+                   </address>
                 </div>
                 <div class="col-12 col-sm-4 align-self-center">
                     <div class="text-center">
@@ -145,6 +242,25 @@ confusion@food.net</a>
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        //Get the button:
+        function findPos(obj) {
+            var curtop = 0;
+            if (obj.offsetParent) {
+                do {
+                    curtop += obj.offsetTop;
+                } while (obj = obj.offsetParent);
+            return [curtop];
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        function downFunction() {
+            window.scroll(0,findPos(document.getElementById("reserve-form-div")));
+            //location.href = '#reserve-form-div';
+          //document.body.scrollTop = height; // For Safari
+          //document.documentElement.scrollTop = height; // For Chrome, Firefox, IE and Opera
+        } 
+    </script>
 </body>
 
 </html>

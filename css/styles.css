@@ -23,6 +23,17 @@
     color:floralwhite;
 }
 
+.reserve-header {
+    padding-top: 10px;
+    background: #e7b825 ;
+    background-color: #e7b825 ;
+    color:floralwhite;
+}
+.reserve-form {
+    
+    border-color: white;
+}
+
 address{
     font-size:80%;
     margin:0px;
