@@ -1,1 +1,1 @@
-trying to fix some things
+courses collection of MERN STACK
